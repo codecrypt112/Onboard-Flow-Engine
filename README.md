@@ -27,13 +27,13 @@ A powerful, beautiful user onboarding library for React with product tours, tool
 ## 📦 Installation
 
 ```bash
-npm install @onboard/flow-engine
+npm install onboard-flow-engine
 ```
 
 ## 🚀 Quick Start
 
 ```tsx
-import { OnboardingProvider, flowEngine, useOnboarding } from '@onboard/flow-engine';
+import { OnboardingProvider, flowEngine, useOnboarding } from 'onboard-flow-engine';
 
 // 1. Register your flow
 flowEngine.registerFlow({
@@ -90,7 +90,7 @@ function YourComponent() {
 ### Checklist Component
 
 ```tsx
-import { Checklist } from '@onboard/flow-engine';
+import { Checklist } from 'onboard-flow-engine';
 
 <Checklist
   title="Getting Started"
@@ -107,7 +107,7 @@ import { Checklist } from '@onboard/flow-engine';
 ### A/B Testing
 
 ```tsx
-import { useABTest } from '@onboard/flow-engine';
+import { useABTest } from 'onboard-flow-engine';
 
 function MyComponent() {
   const { variant, results, winningVariant } = useABTest('welcome-tour');
@@ -125,7 +125,7 @@ function MyComponent() {
 ### Analytics
 
 ```tsx
-import { flowEngine } from '@onboard/flow-engine';
+import { flowEngine } from 'onboard-flow-engine';
 
 // Get completion rate
 const rate = flowEngine.getCompletionRate('welcome-tour');

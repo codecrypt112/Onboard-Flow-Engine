@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@onboard/flow-engine': '../src',
+      'onboard-flow-engine': '../src',
     },
   },
 });

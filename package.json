@@ -1,5 +1,5 @@
 {
-  "name": "@onboard/flow-engine",
+  "name": "onboard-flow-engine",
   "version": "1.0.0",
   "description": "User Onboarding Flow Engine - Build product tours, tooltips, and checklists with progress tracking",
   "main": "dist/index.js",
