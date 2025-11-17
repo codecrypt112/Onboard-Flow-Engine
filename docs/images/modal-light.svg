@@ -1,0 +1,53 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f3f4f6"/>
+  
+  <!-- App Interface (blurred background) -->
+  <rect x="50" y="50" width="700" height="500" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Overlay -->
+  <rect width="800" height="600" fill="#000000" opacity="0.5"/>
+  
+  <!-- Modal -->
+  <g>
+    <!-- Modal Box -->
+    <rect x="150" y="150" width="500" height="300" rx="16" fill="#ffffff" filter="url(#modalShadow)"/>
+    
+    <!-- Close button -->
+    <circle cx="630" cy="170" r="12" fill="#f3f4f6"/>
+    <text x="625" y="176" font-family="Arial, sans-serif" font-size="20" fill="#6b7280">×</text>
+    
+    <!-- Icon -->
+    <circle cx="400" cy="210" r="30" fill="#dbeafe"/>
+    <text x="390" y="225" font-family="Arial, sans-serif" font-size="32">👋</text>
+    
+    <!-- Modal Content -->
+    <text x="400" y="270" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#1f2937" text-anchor="middle">Welcome to Our App!</text>
+    
+    <text x="400" y="305" font-family="Arial, sans-serif" font-size="16" fill="#6b7280" text-anchor="middle">Let us show you around and help you</text>
+    <text x="400" y="330" font-family="Arial, sans-serif" font-size="16" fill="#6b7280" text-anchor="middle">get started with our amazing platform.</text>
+    <text x="400" y="355" font-family="Arial, sans-serif" font-size="16" fill="#6b7280" text-anchor="middle">This will only take 2 minutes.</text>
+    
+    <!-- Buttons -->
+    <rect x="190" y="390" width="100" height="40" rx="8" fill="transparent" stroke="#3b82f6" stroke-width="1"/>
+    <text x="240" y="415" font-family="Arial, sans-serif" font-size="15" font-weight="500" fill="#3b82f6" text-anchor="middle">Skip Tour</text>
+    
+    <rect x="510" y="390" width="120" height="40" rx="8" fill="#3b82f6"/>
+    <text x="570" y="415" font-family="Arial, sans-serif" font-size="15" font-weight="600" fill="#ffffff" text-anchor="middle">Get Started</text>
+  </g>
+  
+  <!-- Shadow filter -->
+  <defs>
+    <filter id="modalShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="20"/>
+      <feOffset dx="0" dy="20" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.25"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+</svg>

@@ -1,0 +1,67 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#111827"/>
+  
+  <!-- App Interface -->
+  <rect x="50" y="50" width="700" height="500" rx="12" fill="#1f2937" stroke="#374151" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="50" y="50" width="700" height="60" rx="12" fill="#3b82f6"/>
+  <text x="80" y="88" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffffff">My App Dashboard</text>
+  
+  <!-- Create Button (highlighted) -->
+  <rect x="620" y="70" width="110" height="40" rx="8" fill="#10b981" stroke="#60a5fa" stroke-width="3"/>
+  <text x="640" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">+ Create</text>
+  
+  <!-- Content Area -->
+  <rect x="80" y="140" width="640" height="80" rx="8" fill="#111827" stroke="#374151" stroke-width="1"/>
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="16" fill="#9ca3af">Your Projects</text>
+  <text x="100" y="195" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">No projects yet. Create your first one!</text>
+  
+  <!-- Tooltip -->
+  <g>
+    <!-- Arrow pointing up -->
+    <path d="M 675 130 L 683 122 L 667 122 Z" fill="#1f2937"/>
+    
+    <!-- Tooltip Box -->
+    <rect x="515" y="-50" width="320" height="160" rx="12" fill="#1f2937" stroke="#374151" stroke-width="1" filter="url(#shadowDark)"/>
+    
+    <!-- Close button -->
+    <circle cx="815" cy="-38" r="10" fill="#374151"/>
+    <text x="811" y="-33" font-family="Arial, sans-serif" font-size="16" fill="#9ca3af">×</text>
+    
+    <!-- Tooltip Content -->
+    <text x="535" y="-20" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#f9fafb">Create Your First Project</text>
+    <text x="535" y="5" font-family="Arial, sans-serif" font-size="14" fill="#d1d5db">Click here to start a new project</text>
+    <text x="535" y="25" font-family="Arial, sans-serif" font-size="14" fill="#d1d5db">and begin building something</text>
+    <text x="535" y="45" font-family="Arial, sans-serif" font-size="14" fill="#d1d5db">amazing!</text>
+    
+    <!-- Buttons -->
+    <rect x="535" y="65" width="70" height="32" rx="6" fill="transparent" stroke="#60a5fa" stroke-width="1"/>
+    <text x="555" y="86" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#60a5fa">Back</text>
+    
+    <rect x="615" y="65" width="60" height="32" rx="6" fill="transparent" stroke="none"/>
+    <text x="625" y="86" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">Skip</text>
+    
+    <rect x="685" y="65" width="130" height="32" rx="6" fill="#3b82f6"/>
+    <text x="725" y="86" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#ffffff" text-anchor="middle">Next</text>
+  </g>
+  
+  <!-- Shadow filter -->
+  <defs>
+    <filter id="shadowDark" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="15"/>
+      <feOffset dx="0" dy="10" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Step indicator -->
+  <text x="400" y="580" font-family="Arial, sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">Step 2 of 3</text>
+</svg>

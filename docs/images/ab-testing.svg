@@ -1,0 +1,45 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f9fafb"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#1f2937" text-anchor="middle">A/B Testing Results</text>
+  
+  <!-- Variant A -->
+  <g>
+    <rect x="50" y="80" width="340" height="280" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+    <text x="220" y="115" font-family="Arial, sans-serif" font-size="20" font-weight="600" fill="#1f2937" text-anchor="middle">Variant A</text>
+    
+    <!-- Bar chart -->
+    <rect x="80" y="150" width="260" height="40" rx="6" fill="#e5e7eb"/>
+    <rect x="80" y="150" width="195" height="40" rx="6" fill="#3b82f6"/>
+    <text x="290" y="175" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#1f2937">75%</text>
+    
+    <!-- Stats -->
+    <text x="80" y="220" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">Completion Rate</text>
+    <text x="80" y="250" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">Total Starts: 200</text>
+    <text x="80" y="275" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">Completions: 150</text>
+    <text x="80" y="300" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">Avg Time: 2m 15s</text>
+    
+    <!-- Badge -->
+    <rect x="150" y="320" width="140" height="30" rx="15" fill="#dbeafe"/>
+    <text x="220" y="340" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#1e40af" text-anchor="middle">🏆 Winner</text>
+  </g>
+  
+  <!-- Variant B -->
+  <g>
+    <rect x="410" y="80" width="340" height="280" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+    <text x="580" y="115" font-family="Arial, sans-serif" font-size="20" font-weight="600" fill="#1f2937" text-anchor="middle">Variant B</text>
+    
+    <!-- Bar chart -->
+    <rect x="440" y="150" width="260" height="40" rx="6" fill="#e5e7eb"/>
+    <rect x="440" y="150" width="169" height="40" rx="6" fill="#8b5cf6"/>
+    <text x="650" y="175" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#1f2937">65%</text>
+    
+    <!-- Stats -->
+    <text x="440" y="220" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">Completion Rate</text>
+    <text x="440" y="250" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">Total Starts: 200</text>
+    <text x="440" y="275" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">Completions: 130</text>
+    <text x="440" y="300" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">Avg Time: 2m 45s</text>
+  </g>
+</svg>

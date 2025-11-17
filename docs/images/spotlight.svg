@@ -1,0 +1,68 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="spotlight-mask">
+      <rect width="800" height="600" fill="white"/>
+      <rect x="310" y="190" width="180" height="60" rx="8" fill="black"/>
+    </mask>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f3f4f6"/>
+  
+  <!-- App Interface -->
+  <rect x="50" y="50" width="700" height="500" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="50" y="50" width="700" height="60" rx="12" fill="#3b82f6"/>
+  <text x="80" y="88" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffffff">My App Dashboard</text>
+  
+  <!-- Content -->
+  <rect x="80" y="140" width="640" height="80" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="80" y="240" width="300" height="120" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="400" y="240" width="320" height="120" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+  
+  <!-- Highlighted Button -->
+  <rect x="320" y="200" width="160" height="40" rx="8" fill="#10b981"/>
+  <text x="400" y="225" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff" text-anchor="middle">New Feature</text>
+  
+  <!-- Overlay with spotlight -->
+  <rect width="800" height="600" fill="rgba(0, 0, 0, 0.7)" mask="url(#spotlight-mask)"/>
+  
+  <!-- Spotlight border with glow -->
+  <rect x="310" y="190" width="180" height="60" rx="8" fill="none" stroke="#3b82f6" stroke-width="3" filter="url(#glow)"/>
+  <rect x="306" y="186" width="188" height="68" rx="10" fill="none" stroke="#3b82f6" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Tooltip -->
+  <g>
+    <path d="M 400 270 L 408 278 L 392 278 Z" fill="#ffffff"/>
+    <rect x="240" y="288" width="320" height="140" rx="12" fill="#ffffff" filter="url(#tooltipShadow)"/>
+    
+    <text x="260" y="318" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#1f2937">Check Out This Feature! ✨</text>
+    <text x="260" y="348" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">This is our newest feature that will</text>
+    <text x="260" y="368" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">help you work more efficiently.</text>
+    
+    <rect x="440" y="390" width="100" height="32" rx="6" fill="#3b82f6"/>
+    <text x="490" y="411" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#ffffff" text-anchor="middle">Got it!</text>
+  </g>
+  
+  <defs>
+    <filter id="tooltipShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="0" dy="10"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+</svg>
